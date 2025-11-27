@@ -1,5 +1,5 @@
 //change all function into arrow function
-const code = Deno.readTextFileSync("./js_code.js");
+const code = Deno.readTextFileSync("./input.js");
 const regExpForFun = /^\s*function\s*(\w+)\s*(\((\w*)\))/g;
 const regExpForvarFun = /const\s*(\w+)\s*=\s*function.*\s*(\((\w*)\))/g;
 const regExps = [regExpForFun, regExpForvarFun];
@@ -10,4 +10,4 @@ const arrowFun = regExps.reduce(
   code,
 );
 
-Deno.writeTextFileSync("./js_code.js", arrowFun);
+Deno.writeTextFileSync("./input.js", arrowFun);
