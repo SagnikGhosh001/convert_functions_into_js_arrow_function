@@ -1,8 +1,5 @@
-const hi = () =>  {
+const hi = function (x) {
+};
+
+function hi() {
 }
-
-const hi = () =>  {
-};
-
-const hi = () =>  {
-};
